@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affix Dictionary</title>
+</head>
+<body>
+    <pre id="dictionary"></pre>
+
+    <script>
+        fetch("./data/dictionary.json")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Failed to load dictionary");
+                }
+                return response.json();
+            })
+            .then(entries => {
+                const output = entries.map(entry =>
+                    `${entry.affix}\t${entry.type}\t/${entry.ipa}/\t${entry.meaning}`
+                );
+
+                document.getElementById("dictionary").textContent =
+                    output.join("\n");
+            })
+            .catch(error => {
+                document.getElementById("dictionary").textContent =
+                    error.message;
+            });
+    </script>
+</body>
+</html>
