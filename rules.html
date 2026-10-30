@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Rules</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px;
+            line-height: 1.7;
+            color: #222;
+        }
+        h1, h2, h3 {
+            color: #183153;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 16px 0 24px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 9px 12px;
+            text-align: left;
+        }
+        th {
+            background: #edf2f7;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Language Rules</h1>
+
+<h2>1. Phonology and Writing System</h2>
+
+<h3>1.1. Consonants</h3>
+<table>
+    <thead>
+        <tr><th>Letter</th><th>IPA</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>b</td><td>/b/</td></tr>
+        <tr><td>c</td><td>/t͡ʃ/</td></tr>
+        <tr><td>d</td><td>/d/</td></tr>
+        <tr><td>f</td><td>/f/</td></tr>
+        <tr><td>g</td><td>/g/</td></tr>
+        <tr><td>h</td><td>/h/</td></tr>
+        <tr><td>j</td><td>/j/</td></tr>
+        <tr><td>k</td><td>/k/</td></tr>
+        <tr><td>l</td><td>/l/</td></tr>
+        <tr><td>m</td><td>/m/</td></tr>
+        <tr><td>n</td><td>/n/</td></tr>
+        <tr><td>p</td><td>/p/</td></tr>
+        <tr><td>r</td><td>/r/</td></tr>
+        <tr><td>s</td><td>/s/</td></tr>
+        <tr><td>t</td><td>/t/</td></tr>
+        <tr><td>v</td><td>/v/</td></tr>
+        <tr><td>w</td><td>/w/</td></tr>
+        <tr><td>x</td><td>/d͡ʒ/</td></tr>
+        <tr><td>z</td><td>/z/</td></tr>
+    </tbody>
+</table>
+
+<h3>1.2. Vowels</h3>
+<table>
+    <thead>
+        <tr><th>Letter</th><th>IPA</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>a</td><td>/a/</td></tr>
+        <tr><td>e</td><td>/e/</td></tr>
+        <tr><td>i</td><td>/i/</td></tr>
+        <tr><td>o</td><td>/o/</td></tr>
+        <tr><td>u</td><td>/u/</td></tr>
+        <tr><td>ä</td><td>/æ/</td></tr>
+        <tr><td>ö</td><td>/œ/</td></tr>
+        <tr><td>ü</td><td>/ʏ/</td></tr>
+    </tbody>
+</table>
+
+<h3>1.3. Long Vowels</h3>
+<table>
+    <thead>
+        <tr><th>Letter</th><th>IPA</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>â</td><td>/aː/</td></tr>
+        <tr><td>ê</td><td>/eː/</td></tr>
+        <tr><td>î</td><td>/iː/</td></tr>
+        <tr><td>ô</td><td>/oː/</td></tr>
+        <tr><td>û</td><td>/uː/</td></tr>
+        <tr><td>â̈</td><td>/æː/</td></tr>
+        <tr><td>ô̈</td><td>/œː/</td></tr>
+        <tr><td>û̈</td><td>/ʏː/</td></tr>
+    </tbody>
+</table>
+
+<h2>2. Morphology</h2>
+
+<h3>2.1. Basic Principles</h3>
+<p>
+    Words in this language are constructed exclusively through
+    combinations of prefixes, infixes, and suffixes, without the
+    use of roots.
+</p>
+<p>
+    Previously formed words may also be used as new affixes.
+</p>
+
+<h3>2.2. Basic Affix Structures</h3>
+<ul>
+    <li>Prefix: <code>[string]+a</code></li>
+    <li>Infix: <code>[string]+i</code></li>
+    <li>Suffix: <code>[string]+u</code></li>
+</ul>
+<p>
+    The string within square brackets is optional. Therefore,
+    <code>a</code>, <code>i</code>, and <code>u</code> may each
+    function as standalone affixes.
+</p>
+
+<h3>2.3. Affix Naming Rules</h3>
+<ol>
+    <li>Three or more consecutive consonants are prohibited.</li>
+    <li>More frequently used affixes should be shorter.</li>
+    <li>Duplicate affixes are prohibited.</li>
+</ol>
+
+<h3>2.4. Semantic Classification of Prefixes</h3>
+<p>
+    The initial letter of a prefix determines its basic semantic category.
+</p>
+<table>
+    <thead>
+        <tr><th>Initial Letter</th><th>Meaning</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>n</td><td>Nouns referring to objects or substances</td></tr>
+        <tr><td>l</td><td>Parts of speech representing abstract concepts</td></tr>
+        <tr><td>v</td><td>Verbs</td></tr>
+    </tbody>
+</table>
+<p>
+    Only these three categories are permitted. No additional
+    categories shall be introduced.
+</p>
+
+<h2>3. Word Formation</h2>
+
+<h3>3.1. Basic Word Formation</h3>
+<p>
+    Words are formed by combining multiple affixes.
+    Spaces must not be inserted within a word.
+</p>
+
+<h3>3.2. Recursive Affix Formation</h3>
+<p>
+    Previously formed words may be used as affixes according
+    to the following structure:
+</p>
+<p><code>e+[word]+e+[a/i/u]</code></p>
+
+<h3>3.3. Proper Nouns</h3>
+<p>
+    Proper nouns are formed according to the following structure:
+</p>
+<p><code>e+[proper noun]+e+[a/i/u]</code></p>
+
+<h2>4. Syntax</h2>
+
+<h3>4.1. Basic Word Order</h3>
+<p>
+    The basic word order is VSO (Verb–Subject–Object).
+</p>
+<ul>
+    <li>V: Verb</li>
+    <li>S: Subject</li>
+    <li>O: Object</li>
+</ul>
+
+<h3>4.2. Direct Object Marker</h3>
+<p>
+    <code>tu</code> is used as the direct object marker.
+</p>
+
+<h3>4.3. Coordination</h3>
+<p>
+    <code>ku</code> is used as a suffix meaning "and".
+</p>
+
+<h3>4.4. Possession and Association</h3>
+<p>
+    <code>mu</code> is used as a suffix meaning "of".
+</p>
+
+</body>
+</html>
