@@ -29,7 +29,12 @@ jobs:
           python-version: "3.x"
 
       - name: Generate JSON
-        run: python scripts/build_dictionary.py
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set -x
+          python scripts/build_dictionary.py
+
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
